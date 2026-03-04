@@ -1,0 +1,3 @@
+# For Google Colab (Python 3.10) — includes Flamby FedISIC
+-r requirements.txt
+flamby[fed_isic2019]

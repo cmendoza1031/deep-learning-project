@@ -1,0 +1,33 @@
+# configs/fedisic_config.yaml
+
+data:
+  dataset: fed_isic2019
+  num_classes: 7
+  image_size: 224
+  num_clients: 4
+
+model:
+  backbone: vit_base_patch16_224
+  pretrained: true
+  lora_target_modules: ["query", "value"]  # Q and V attention projections
+  lora_alpha: 16  # standard scaling factor
+
+federated:
+  num_rounds: 20
+  local_epochs: 3
+  batch_size: 32
+  learning_rate: 0.0001
+  optimizer: adamw
+  weight_decay: 0.01
+
+# Heterogeneous rank assignment by client index
+rank_assignment:
+  client_0: 16   # VIDIR-Graz, largest
+  client_1: 8    # Ham10000-A
+  client_2: 4    # Ham10000-B
+  client_3: 2    # BCN, smallest
+
+# For homogeneous baseline (FedAvg full fine-tune)
+homogeneous_rank: 8
+
+seed: 42
