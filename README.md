@@ -91,4 +91,4 @@ medhetlora/
 
 ## Model Weights
 
-**FedAvg, HetLoRA, and FlexLoRA** checkpoints are available for the Gradio demo. **DQAW** weights are not available at this time — the model was trained and achieved 71% BACC, but the checkpoint was lost when the Colab runtime disconnected. You can still run the demo with the three available methods and train DQAW yourself using the experiment script above.
+All four model checkpoints (FedAvg, HetLoRA, FlexLoRA, DQAW) are available for the Gradio demo. Run `python demo/gradio_app.py` to compare predictions across all methods.
