@@ -20,12 +20,14 @@ Instead of weighting hospitals by data count (standard FedAvg), DQAW weights by 
 
 ### Results
 
-| Method | BACC | Notes |
-|--------|------|-------|
-| FedAvg | 74.0% | Homogeneous rank 8 (baseline) |
-| DQAW (Ours) | 71.0% | Quality-adaptive weighting |
-| FlexLoRA | 70.9% | ΔW + SVD |
-| HetLoRA | 64.2% | Zero-padding (rank collapse) |
+
+| Method      | BACC  | Notes                         |
+| ----------- | ----- | ----------------------------- |
+| FedAvg      | 74.0% | Homogeneous rank 8 (baseline) |
+| DQAW (Ours) | 71.0% | Quality-adaptive weighting    |
+| FlexLoRA    | 70.9% | ΔW + SVD                      |
+| HetLoRA     | 64.2% | Zero-padding (rank collapse)  |
+
 
 ---
 
