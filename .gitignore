@@ -31,3 +31,9 @@ kaggle.json
 
 # Gradio
 .gradio/
+
+# Private notes
+TODO_private.md
+
+# PDF source papers
+*.pdf
